@@ -31,4 +31,7 @@ int main(int argc, char *argv[]) {
    uchar table[256];
    for (int i = 0; i < 256; ++i)
        table[i] = (uchar)(divideWidth * (i/divideWidth));
+   double t = (double)getTickCount();
+
+   cout << "Times passed in seconds: " << t << endl;
 }
